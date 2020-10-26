@@ -8,7 +8,7 @@ def join_nested_strings(src)
     element_index = 0 
     array[row_index] = src[row_index][element_index]
     while element_index < src[row_index].count do
-      if array[row_index].class == 
+      if array[row_index].assert_instance_of == 
         array[row_index] = src[row_index][element_index]
       end
       element_index += 1
